@@ -51,7 +51,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas:    "headline headline"
                                 "content images";
-        gap: 2rem;
+        gap: 3rem;
         }
         h1 {
             font-size: 44px;
@@ -86,8 +86,10 @@
     }
 
     @include desktop {
-        grid-template-areas:    "headline images"
-                                "content images";
+        .container {
+            grid-template-areas:    "headline images"
+                                    "content images";
+        }
 
         h1 {
             font-size: 56px;
