@@ -21,7 +21,6 @@ header .container-nav {
     }
 
     @include tablet {
-        max-width: 720px;
         gap: 3rem;
 
         .btn-toggle-switch .label {
@@ -37,7 +36,6 @@ header .container-nav {
     }
 
     @include desktop {
-        max-width: 1320px;
         grid-template-columns: auto 1fr auto auto;
 
         .navbar {
