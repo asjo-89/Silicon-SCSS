@@ -1,0 +1,15 @@
+a {
+    color: var(--color-white);
+
+    &:hover {
+        color: var(--color-white);
+    }
+}
+
+.nav-link {
+    color: var(--color-grey800);
+
+    &:hover {
+        color: var(--color-grey800);
+    }
+}

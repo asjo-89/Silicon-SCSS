@@ -1,0 +1,50 @@
+@include tablet {
+    
+}
+
+#hero {
+    background: rgb(99,102,241);
+    background: linear-gradient(0deg, rgba(99,102,241,0.10127801120448177) 0%, rgba(218,70,239,0.04525560224089631) 42%, rgba(241,244,253,0.06766456582633051) 83%);
+    padding-bottom: 2rem;
+
+    .container {
+        padding-bottom: 0;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:    "headline"
+                                "content";
+    }
+    .headline {
+        text-align: center;
+        grid-area: headline;
+    }
+    .content {
+        text-align: center;
+        grid-area: content;
+
+        p {
+            font-size: 18px;
+            margin-bottom: 3rem;
+        }
+        #appstore-dark {display: none;}
+        #gp-dark {display: none;}
+
+        .buttons-app {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .discover-more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 1rem;
+            color: var(--color-grey900);
+        }
+    }
+    .images {
+        display: none;
+    }
+}
