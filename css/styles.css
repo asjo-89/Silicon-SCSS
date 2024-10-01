@@ -98,6 +98,10 @@ a:hover {
   box-shadow: 0 0 4px var(--color-grey300);
 }
 
+.icon {
+  background-color: var(--color-grey200);
+}
+
 @media (prefers-redused-motion: no-preferens) {
   :root {
     scroll-behavior: smooth;
@@ -108,10 +112,6 @@ a:hover {
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-}
-
-img, svg {
-  vertical-align: middle;
 }
 
 body p {
@@ -140,6 +140,15 @@ a p {
 }
 a:hover {
   text-decoration: underline;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 0.5em;
 }
 
 .btn {
@@ -594,5 +603,123 @@ header .container-nav .label {
   }
   #logo-row #logo5, #logo-row #logo6 {
     display: flex;
+  }
+}
+
+#app-features .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 2rem;
+}
+#app-features .header {
+  margin-bottom: 2rem;
+  grid-area: header;
+}
+#app-features .header h2 {
+  text-align: center;
+}
+#app-features .header p {
+  font-size: 18px;
+  color: var(--color-grey800);
+  text-align: center;
+}
+#app-features .images {
+  display: none;
+}
+#app-features .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#app-features .content .features {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  justify-content: left;
+  grid-template-columns: auto auto;
+  grid-template-areas: "card h3" "card p";
+}
+#app-features .content p {
+  grid-area: p;
+}
+#app-features .content h3 {
+  font-size: 20px;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 0;
+  grid-area: h3;
+}
+#app-features .content .icon {
+  grid-area: card;
+}
+@media (width > 768px) {
+  #app-features .container, #app-features .container-nav {
+    max-width: 720px;
+  }
+  #app-features .content {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "payments security" "statistics support" "cashback standards";
+  }
+  #app-features .header h2 {
+    font-size: 33px;
+  }
+  #app-features #f1 {
+    grid-area: payments;
+  }
+  #app-features #f2 {
+    grid-area: security;
+  }
+  #app-features #f3 {
+    grid-area: statistics;
+  }
+  #app-features #f4 {
+    grid-area: support;
+  }
+  #app-features #f5 {
+    grid-area: cashback;
+  }
+  #app-features #f6 {
+    grid-area: standards;
+  }
+}
+@media (width > 1400px) {
+  #app-features .container, #app-features .container-nav {
+    max-width: 1320px;
+  }
+  #app-features .container {
+    grid-template-columns: 500px 1fr;
+    grid-template-areas: "images content";
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  #app-features .header h2 {
+    font-size: 40px;
+    text-align: left;
+    padding-left: 0;
+  }
+  #app-features .container p {
+    text-align: left;
+  }
+  #app-features .images {
+    display: grid;
+    position: relative;
+    padding-top: 2rem;
+    margin-right: 5rem;
+  }
+  #app-features #iphone-features {
+    width: 75%;
+    height: auto;
+  }
+  #app-features #card-features {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    top: 110px;
+    left: 20px;
   }
 }
