@@ -29,3 +29,8 @@ body {
         color: var(--color-grey600);
     }
 }
+
+#faq .list-item {
+    background-color: var(--color-white);
+    box-shadow: 1px 4px 4px var(--color-grey300);
+}

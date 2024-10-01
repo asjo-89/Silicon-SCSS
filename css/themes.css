@@ -1,4 +1,5 @@
 :root {
+  --color-arrow-white: #FFF;
   --color-btn-primary: #FFF;
   --color-clients: #565973;
   --color-name: #0B0F19;
@@ -31,7 +32,7 @@
   --color-grey400: #0B0F19;
   --color-grey300: #565973;
   --color-grey200: #33354D;
-  --color-grey100: #0B0F19;
+  --color-grey100: #0a0c11;
   --color-white: #1c1e2b;
   --color-bg-dark: #000;
   --color-btn-primary: rgba(255, 255, 255, 0.770);
@@ -71,6 +72,11 @@ body {
   color: var(--color-grey600);
 }
 
+#faq .list-item {
+  background-color: var(--color-white);
+  box-shadow: 1px 4px 4px var(--color-grey300);
+}
+
 .discover-more {
   color: var(--colorgrey900);
 }
@@ -95,6 +101,7 @@ body {
 }
 
 .btn-circle {
+  background-color: var(--color-grey100);
   box-shadow: 0 0 2px var(--color-grey700);
 }
 
@@ -104,6 +111,11 @@ body {
 
 .btn-toggle-switch .label {
   color: var(--color-grey700);
+}
+
+.btn-circle-acc {
+  box-shadow: 0 0 2px var(--color-grey500);
+  color: var(--color-grey900);
 }
 
 a {
@@ -118,6 +130,14 @@ a:hover {
 }
 .nav-link:hover {
   color: var(--color-grey800);
+}
+
+#purple {
+  color: var(--color-primary-hover);
+}
+
+#green {
+  color: var(--color-success);
 }
 
 .logo {
