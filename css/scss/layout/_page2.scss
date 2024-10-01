@@ -1,0 +1,71 @@
+#work {
+    .container {
+        @include flex-center;
+
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+    .content-tablet, .content-desktop {
+        display: none;
+    }
+    .images {
+        @include flex-center;
+    
+        #iphone-transfer-mob {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    #iphone-cards-tab, #iphone-transfer-tab, #iphone-budget-desk, #iphone-cards-desk, #iphone-transfer-desk {
+        display: none;
+    }
+
+    @include tablet {
+        #iphone-cards-tab, #iphone-transfer-tab {
+            display: block;
+        }
+        .images {
+            width: 100%;
+            gap: 2rem;
+            position: relative;    
+        }
+        .images #iphone-transfer-mob {
+            width: 35%;
+            height: auto;
+        }
+        #iphone-cards-tab, #iphone-transfer-tab {
+            width: 100%;
+            height: auto;
+        }
+        .content-mobile {
+            display: none;
+        }
+        .content-tablet {
+            display: block;
+        }
+    }
+
+    @include desktop {
+        .content-tablet {
+            display: none;
+        }
+        .content-desktop {
+            display: block;
+            max-width: 630px;
+        }
+        .images {
+            gap: 6rem;
+        }
+        #iphone-cards-tab, #iphone-transfer-mob, #iphone-transfer-tab {
+            display: none;
+        }
+        #iphone-budget-desk, #iphone-cards-desk, #iphone-transfer-desk {
+            display: block;
+        }
+        #iphone-budget-desk, #iphone-transfer-desk {
+            width: 20%;
+            height: auto;
+        }
+    }
+}

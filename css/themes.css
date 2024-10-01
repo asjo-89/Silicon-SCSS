@@ -44,6 +44,15 @@ body {
   color: var(--color-grey700);
 }
 
+#hero {
+  background: rgb(99, 102, 241);
+  background: linear-gradient(0deg, rgba(99, 102, 241, 0.1012780112) 0%, rgba(218, 70, 239, 0.0452556022) 42%, rgba(241, 244, 253, 0.0676645658) 83%);
+}
+
+#work {
+  background-color: var(--color-grey100);
+}
+
 .discover-more {
   color: var(--colorgrey900);
 }
