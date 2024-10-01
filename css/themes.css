@@ -53,6 +53,24 @@ body {
   background-color: var(--color-grey100);
 }
 
+#clients {
+  background-color: var(--color-grey100);
+}
+#clients .btn-quotation {
+  box-shadow: 2px 5px 10px var(--color-grey500);
+}
+#clients .card {
+  background-color: var(--color-white);
+  color: var(--color-grey700);
+  box-shadow: 2px 5px 10px var(--color-grey400);
+}
+#clients .name {
+  color: var(--color-grey900);
+}
+#clients .job {
+  color: var(--color-grey600);
+}
+
 .discover-more {
   color: var(--colorgrey900);
 }

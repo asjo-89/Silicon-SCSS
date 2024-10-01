@@ -1,0 +1,92 @@
+#clients {
+    display: none;
+
+    @include desktop {
+        display: block;
+        
+        .container {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+            position: relative;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+        .btn-quotation {
+            width: 2.5rem;
+            aspect-ratio: 1;
+        }
+        #quotation-1 {
+            position: absolute;
+            top: 4.5rem;
+            left: 33rem;
+        }
+        #quotation-2 {
+            position: absolute;
+            top: 4.5rem;
+            left: 59.5rem;
+        }
+        .cards {
+            @include flex-center;
+
+            max-width: 800px;
+            gap: 3rem;
+        }
+        .card {
+            max-height:300px;
+            padding: 1.5rem;
+            border-radius: .5rem;
+        }
+        .stars {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .content-card-1 {
+            .star-filled {
+                background-image: url(/css/scss/images/page4/star-filled.svg);
+                width: 4rem;
+                height: 1rem;
+                background-repeat: repeat-x;
+            }
+            .star-empty {
+                background-image: url(/css/scss/images/page4/star-empty.svg);
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+        .content-card-2 {
+
+            .star-filled {
+                background-image: url(/css/scss/images/page4/star-filled.svg);
+                width: 5rem;
+                height: 1rem;
+                background-repeat: repeat-x;
+            }
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+            padding-top: 1rem;
+
+            .data {
+                display: flex;
+                flex-direction: column;
+            }
+            .name {
+                font-weight: 700;
+                color: var(--color-grey900);
+            }
+            .job {
+                color: var(--color-grey600);
+            }
+        }
+    }
+}

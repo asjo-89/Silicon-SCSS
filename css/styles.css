@@ -53,6 +53,24 @@ body {
   background-color: var(--color-grey100);
 }
 
+#clients {
+  background-color: var(--color-grey100);
+}
+#clients .btn-quotation {
+  box-shadow: 2px 5px 10px var(--color-grey500);
+}
+#clients .card {
+  background-color: var(--color-white);
+  color: var(--color-grey700);
+  box-shadow: 2px 5px 10px var(--color-grey400);
+}
+#clients .name {
+  color: var(--color-grey900);
+}
+#clients .job {
+  color: var(--color-grey600);
+}
+
 .discover-more {
   color: var(--colorgrey900);
 }
@@ -899,5 +917,96 @@ header .container-nav .label {
   #transfer-payment .icon-transfer {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+}
+
+#clients {
+  display: none;
+}
+@media (width > 1400px) {
+  #clients {
+    display: block;
+  }
+  #clients .container, #clients .container-nav {
+    max-width: 1320px;
+  }
+  #clients .container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    position: relative;
+  }
+  #clients h2 {
+    font-size: 2.5rem;
+  }
+  #clients .btn-quotation {
+    width: 2.5rem;
+    aspect-ratio: 1;
+  }
+  #clients #quotation-1 {
+    position: absolute;
+    top: 4.5rem;
+    left: 33rem;
+  }
+  #clients #quotation-2 {
+    position: absolute;
+    top: 4.5rem;
+    left: 59.5rem;
+  }
+  #clients .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    gap: 3rem;
+  }
+  #clients .card {
+    max-height: 300px;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  #clients .stars {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #clients .content-card-1 .star-filled {
+    background-image: url(/css/scss/images/page4/star-filled.svg);
+    width: 4rem;
+    height: 1rem;
+    background-repeat: repeat-x;
+  }
+  #clients .content-card-1 .star-empty {
+    background-image: url(/css/scss/images/page4/star-empty.svg);
+    width: 1rem;
+    height: 1rem;
+  }
+  #clients .content-card-2 .star-filled {
+    background-image: url(/css/scss/images/page4/star-filled.svg);
+    width: 5rem;
+    height: 1rem;
+    background-repeat: repeat-x;
+  }
+  #clients .profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  #clients .profile .data {
+    display: flex;
+    flex-direction: column;
+  }
+  #clients .profile .name {
+    font-weight: 700;
+    color: var(--color-grey900);
+  }
+  #clients .profile .job {
+    color: var(--color-grey600);
   }
 }

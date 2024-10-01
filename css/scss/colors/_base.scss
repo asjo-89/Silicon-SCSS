@@ -10,3 +10,22 @@ body {
 #work {
     background-color: var(--color-grey100);
 }
+
+#clients {
+    background-color: var(--color-grey100);
+
+    .btn-quotation {
+        box-shadow: 2px 5px 10px var(--color-grey500);
+    }
+    .card {
+        background-color: var(--color-white);
+        color: var(--color-grey700);
+        box-shadow: 2px 5px 10px var(--color-grey400);
+    }
+    .name {
+        color: var(--color-grey900);
+    }
+    .job {
+        color: var(--color-grey600);
+    }
+}
