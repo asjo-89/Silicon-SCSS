@@ -2,6 +2,7 @@
     .container{
         display: grid;
         grid-template-columns: 1fr;
+        padding: 1rem;
         padding-bottom: 2rem;
     }
     .header {
@@ -51,6 +52,10 @@
     }
 
     @include tablet {
+        .container {
+            padding: 0 0 2rem 0;
+        }
+        
         .content {
         display: grid;
         gap: 2rem;

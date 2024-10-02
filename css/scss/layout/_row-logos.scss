@@ -2,14 +2,14 @@
     display: none;
 
     @include tablet {
-        display: flex;
+        display: block;
 
         .container {
-            @include flex-center;
-
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             gap: 1rem;
-            padding-top: 3rem;
-            padding-bottom: 2rem;
+            padding: 5rem 0 2rem 0;
         }
         #logo5, #logo6 {
             display: none;

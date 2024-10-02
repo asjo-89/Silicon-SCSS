@@ -2,7 +2,6 @@
     
     .container {
         width: 100%;
-        padding: 3rem 2rem;
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -51,7 +50,7 @@
 
     @include tablet {
         .container {
-            padding: 2rem 1rem;
+            padding: 3rem 0 3rem 0;
             flex-direction: row;
         }
         .form {

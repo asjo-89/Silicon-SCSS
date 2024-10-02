@@ -30,7 +30,9 @@ header .container-nav {
     }
 
     @include tablet {
-        gap: 3rem;
+            gap: 3rem;
+            padding: 0;
+            padding-top: 1rem;
 
         .btn-toggle-switch .label {
             display: block;

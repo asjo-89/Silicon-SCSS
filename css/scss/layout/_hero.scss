@@ -43,7 +43,7 @@
     @include tablet {
         
         .container {
-            padding-bottom: 0;
+            padding: 0;
             grid-template-columns: 1fr 1fr;
             grid-template-areas:    "headline headline"
                                     "content images";
