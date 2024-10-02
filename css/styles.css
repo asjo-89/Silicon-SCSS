@@ -208,9 +208,6 @@ a:hover {
   background-color: var(--color-grey200);
 }
 
-.form {
-  color: var(--color-grey500);
-}
 .form .form-input {
   border: 1px solid var(--color-grey600);
 }
@@ -1138,13 +1135,15 @@ header .container-nav .label {
   transition: all 0.3s ease-in;
 }
 @media (width > 768px) {
-  #faq .container {
+  #faq .container, #faq .container-nav {
     max-width: 720px;
-    padding: 2rem 0 3rem 0;
   }
 }
+#faq .container {
+  padding: 2rem 0 3rem 0;
+}
 @media (width > 1400px) {
-  #faq .container {
+  #faq .container, #faq .container-nav {
     max-width: 1320px;
   }
   #faq .container {
@@ -1277,4 +1276,12 @@ header .container-nav .label {
   #subscribe h3 {
     display: none;
   }
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
 }
