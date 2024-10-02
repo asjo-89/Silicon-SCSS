@@ -33,4 +33,59 @@ body {
 #faq .list-item {
     background-color: var(--color-white);
     box-shadow: 1px 4px 4px var(--color-grey300);
+
+    .question {
+        color: var(--color-grey900);
+    }
+    input[type="radio"]:checked ~ .title .btn-circle {
+        background-color: var(--color-primary);
+        color: var(--color-arrow-white);
+    }
+}
+
+
+#subscribe {
+    background-color: var(--color-grey100);
+}
+
+.slider {
+    background-color: var(--color-white);
+}
+
+label[for="theme-switch"] {
+    background-color: var(--color-grey600);
+}
+
+input[type="checkbox"]:checked ~ .wrapper {
+    --color-grey900: rgba(255, 255, 255);
+    --color-grey800: #9397AD;
+    --color-grey700: #B4B7C9;
+    --color-grey600: #9397AD;
+    --color-grey500: #B4B7C9;
+    --color-grey400: #0B0F19;
+    --color-grey300: #565973;
+    --color-grey200: #33354D;
+    --color-grey100: #0a0c11;
+    --color-white: #222433;
+    --color-bg-dark: #000;
+    --color-arrow-white: #FFF;
+
+    --color-btn-primary: rgba(255, 255, 255, 0.842);
+    --color-primary: hsl(239, 48%, 49%);
+    --color-primary-hover: hsl(239, 84%, 70%);
+    --color-primary-opacity: rgb(99, 102, 241, .3);
+    
+    background-color: var(--color-bg-dark);
+
+    .slider {background-color: var(--color-grey900)};
+    img {filter: brightness(95%);}
+    .btn-circle {background-color: var(--color-white);}
+    #faq #phone, #faq #message {
+        box-shadow: 0 0 10px var(--color-grey300);
+        background-color: var(--color-grey100);
+    }
+    #subscribe .form-input {background-color: var(--color-white);}
+}
+input[type="checkbox"]:checked ~  .wrapper .toggle {
+    background-color: var(--color-primary);
 }

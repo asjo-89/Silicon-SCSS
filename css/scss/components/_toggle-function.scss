@@ -14,7 +14,6 @@ input[type="checkbox"]::before {
     transition: all 0.2s ease;
 }
 label[for="theme-switch"] {
-    background-color: var(--color-grey600);
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -39,7 +38,6 @@ label[for="theme-switch"]::after {
 }
 .slider {
     position: absolute;
-    background-color: var(--color-white);
     height: 16px;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -49,28 +47,7 @@ label[for="theme-switch"]::after {
     transition: all 0.2s ease;
 }
 input[type="checkbox"]:checked ~ .wrapper {
-    --color-grey900: rgba(255, 255, 255);
-    --color-grey800: #9397AD;
-    --color-grey700: #B4B7C9;
-    --color-grey600: #9397AD;
-    --color-grey500: #B4B7C9;
-    --color-grey400: #0B0F19;
-    --color-grey300: #565973;
-    --color-grey200: #33354D;
-    --color-grey100: #0a0c11;
-    --color-white: #222433;
-    --color-bg-dark: #000;
-    --color-arrow-white: #FFF;
-
-    --color-btn-primary: rgba(255, 255, 255, 0.842);
-    --color-primary: hsl(239, 48%, 49%);
-    --color-primary-hover: hsl(239, 84%, 70%);
-    --color-primary-opacity: rgb(99, 102, 241, .3);
-    
-    background-color: var(--color-bg-dark);
     transition: all 0.2s ease-in-out;
-
-    img {filter: brightness(75%);}
     #logo-light {display: none;}
     #logo-dark {
         display: flex;
@@ -86,14 +63,10 @@ input[type="checkbox"]:checked ~ .wrapper {
     #hero #gp-light {display: none;}
     #hero #mob-menu-light {display: none;}
     #hero #mob-menu-dark {display: block;}
-    .btn-circle {background-color: var(--color-white);}
     #clients .btn-quotation {box-shadow: none;}
-    #faq #phone, #faq #message {box-shadow: 0 0 10px var(--color-grey300);}
     #faq .list-item {box-shadow: none;}
-    #subscribe .form-input {background-color: var(--color-white);}
 }
 input[type="checkbox"]:checked ~  .wrapper .toggle {
-    background-color: var(--color-primary-hover);
     transition: all 0.2s ease;
 }
 input[type="checkbox"]:checked ~ .wrapper .slider {

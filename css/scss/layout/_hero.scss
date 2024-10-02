@@ -1,6 +1,6 @@
 #hero {
     .container {
-        padding-bottom: 0;
+        padding: 1rem 1rem 2rem 1rem;
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr;
@@ -41,12 +41,12 @@
     }
 
     @include tablet {
-        padding-bottom: 0;
-    
+        
         .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:    "headline headline"
-                                "content images";
+            padding-bottom: 0;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:    "headline headline"
+                                    "content images";
         gap: 3rem;
         }
         h1 {

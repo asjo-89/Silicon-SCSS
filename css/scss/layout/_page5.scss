@@ -34,7 +34,7 @@
             justify-content: center;
             border-radius: .5em;
         }
-        .btn-circle-acc, {
+        .btn-circle-acc {
             width: 2.5rem;
             height: 2.5rem;
             transition: all .3s ease;
@@ -43,7 +43,6 @@
             padding: 1rem;
             font-size: 16px;
             font-weight: 600;
-            color: var(--color-grey900);
             cursor: pointer;
             background-color: transparent;
         }
@@ -61,8 +60,6 @@
         }
         input[type="radio"]:checked ~ .title .btn-circle {
             transform: rotate(180deg);
-            background-color: var(--color-primary);
-            color: var(--color-arrow-white);
         }
         input[type="radio"]:checked + .question::after {
             content: '';
