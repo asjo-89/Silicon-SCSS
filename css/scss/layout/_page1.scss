@@ -105,22 +105,6 @@
         }
         .images {
             display: grid;
-            position: relative;
-            padding-top: 2rem; 
-            margin-right: 5rem;
         }
-        #iphone-features {
-            width: 75%;
-            height: auto;
-        }
-        #card-features {
-            width: 80%;
-            height: auto;
-            position: absolute;
-            z-index: 2;
-            top: 110px;
-            left: 20px;
-        }
-        
     }
 }

@@ -32,7 +32,6 @@
 
             margin-top: 2rem;
             gap: 1rem;
-            color: var(--color-grey900);
         }
     }
     .images {
@@ -61,26 +60,9 @@
             margin-bottom: 3rem;
             justify-content: flex-start;
         }
-        .images {
-            display: block;
-            position: relative;
-        }
-        .iphone-back {
-            position: absolute;
-            z-index: 5;
-            bottom: 0;
-            right: 110px;
-            width: 70%;
-            height: auto;
-        }
-        .iphone-front {
-            position: absolute;
-            z-index: 10;
-            bottom: 0;
-            right: 0;
-            width: 70%;
-            height: auto;
-        }
+         .images {
+             display: block;
+         }
     }
 
     @include desktop {

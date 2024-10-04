@@ -1,18 +1,9 @@
 header .container-nav {
     @include grid-center;
-
     padding: 1rem;
     grid-template-columns: 1fr auto auto;
     gap: 2rem;
 
-    #logo-light {
-        background-color: transparent;
-
-        img {
-            width: 140px;
-            height: 52px;
-        }
-    }
     #signin {
         display: none;
     }   

@@ -14,22 +14,10 @@
         #logo5, #logo6 {
             display: none;
         }
-        .logo {
-            @include flex-center;
-            
-            border-radius: 8px;
-            width: 160px;
-            height: 70px;
-            padding-left: .5rem;
-            padding-right: .5rem;
-        }
+        
     }
 
     @include desktop {
-        .logo {
-            width: 200px;
-            height: 100px;
-        }
         #logo5, #logo6 {
             display: flex;
         }

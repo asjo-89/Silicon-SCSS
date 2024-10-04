@@ -1,5 +1,4 @@
 #subscribe {
-    
     .container {
         width: 100%;
         display: flex;
@@ -40,11 +39,6 @@
             max-height: 52px;
             padding: 1em 2.5em;
         }
-        .letter {
-            position: absolute;
-            top: 13px;
-            left: .8em;
-        }
     }
     .text-desktop {
         display: none;
@@ -68,21 +62,17 @@
             max-width: 120px;
             margin: 0;
         }
-        .form .letter {
-            top: 50%;
-            left: .8em;
-            transform: translateY(-50%);
-        }
+        
     }
 
     @include desktop {
-            .text-desktop {
-                display:  flex;
-                font-size: 24px;
-                font-weight: 800;
-            }
-            h3 {
-                display: none;
-            }
+        .text-desktop {
+            display:  flex;
+            font-size: 24px;
+            font-weight: 800;
+        }
+        h3 {
+            display: none;
+        }
     }
 }

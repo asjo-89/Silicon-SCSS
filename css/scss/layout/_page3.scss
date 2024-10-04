@@ -24,31 +24,12 @@
             grid-template-rows: repeat(5, 1fr);
             position: relative;          
         }
-        #contacts {
-            position: absolute;
-            bottom: 0;
-        }
-        #card-contacts {
-            grid-column: 3 / 6;
-            grid-row: 2 / 4;
-            position: absolute;
-        }
         .images-col-2 {
             grid-area: images-col-2;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(5, 1fr);
             position: relative;            
-        }
-        #money {
-            position: absolute;
-            bottom: 2rem;
-        }
-        #send-money {
-            grid-column: 3 / 5;
-            grid-row: 4 /5;
-            position: absolute;
-            bottom: -90px;
         }
         .content-2 {
             grid-area: content-2;
@@ -93,6 +74,5 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
         }
-        
     }
 }

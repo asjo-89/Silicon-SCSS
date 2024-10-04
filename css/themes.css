@@ -196,6 +196,13 @@ a:hover {
   color: var(--color-white);
 }
 
+.discover-more {
+  color: var(--color-grey800);
+}
+.discover-more:hover {
+  color: var(--color-grey800);
+}
+
 .nav-link {
   color: var(--color-grey800);
 }

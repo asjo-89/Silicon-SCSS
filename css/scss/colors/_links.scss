@@ -6,6 +6,14 @@ a {
     }
 }
 
+.discover-more {
+    color: var(--color-grey800);
+
+    &:hover {
+        color: var(--color-grey800);
+    }
+}
+
 .nav-link {
     color: var(--color-grey800);
 
