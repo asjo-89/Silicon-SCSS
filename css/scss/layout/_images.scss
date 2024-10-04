@@ -79,11 +79,10 @@
 
     @include tablet {
         .images #iphone-transfer-mob {
-            width: 35%;
-            height: auto;
+            height: 410px;
         }
         #iphone-cards-tab, #iphone-transfer-tab {
-            width: 100%;
+            width: 85%;
             height: auto;
         }
     }
