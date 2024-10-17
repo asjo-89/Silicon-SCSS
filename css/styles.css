@@ -1333,7 +1333,7 @@ footer .container {
 }
 
 #subscribe .form .letter {
-  top: 50%;
+  position: absolute;
+  top: 32px;
   left: 0.8em;
-  transform: translateY(-50%);
 }

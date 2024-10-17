@@ -151,8 +151,8 @@
 
 #subscribe {
     .form .letter {
-        top: 50%;
+        position: absolute;
+        top: 32px;
         left: .8em;
-        transform: translateY(-50%);
     }
 }
